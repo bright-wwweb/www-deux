@@ -3,11 +3,8 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import pic1 from '../assets/images/pic01.jpg';
-import compost from '../assets/images/compost.jpeg';
 import pic2 from '../assets/images/pic02.png';
 import Scroll from '../components/Scroll';
-import Gallery from '../components/Gallery';
 
 const ROW1_IMAGES = [
   {
@@ -57,14 +54,26 @@ const ROW2_IMAGES = [
 const IndexPage = () => (
   <Layout>
     <Header />
-
     <section id="banner">
       <header>
         <h2>About Us</h2>
       </header>
       <p>
-       Radical tech ed//installations//do nothing without intention
-      </p>
+        °• Mxd Media Collective •°
+        <br/>
+        °• RADICAL TECH EDUCATION
+        °• SOFTWARE 
+        °• HARDWARE
+        °• MUSIC 
+        <br />
+        Karina Muñoz Gonzalez •°
+        Michelle Lim •°
+        David Viramontes •° 
+        Kyle Videtzky •° 
+        <br />
+
+        °• Do nothing without intention •°
+       </p>
       <footer>
         <Scroll type="id" element="first">
           <a href="#first" className="button style2 scrolly">
@@ -76,14 +85,14 @@ const IndexPage = () => (
 
     <article id="first" className="container box style1 right">
       <a href="/#" className="image fit">
-        <img src={compost} />
+        <div id="image-div"></div>
       </a>
       <div className="inner">
         <header>
           <h2>
             RE: 
             <br />
-            I Don't Compost
+            Do You Compost?
           </h2>
         </header>
         <h4>
@@ -111,14 +120,14 @@ const IndexPage = () => (
 
     <article className="container box style1 left">
       <a href="/#" className="image fit">
-        <img src={pic2} alt="" />
+        <div id="traffic-image"></div>
       </a>
       <div className="inner">
         <header>
           <h2>
             RE: 
             <br />
-            Driving
+            Do You Drive To Work?
           </h2>
         </header>
         <h4>
@@ -135,7 +144,7 @@ const IndexPage = () => (
           Daily Action Item:
         </h4>
         <ol>
-          Opt in to Denver’s <a href="https://www.denvergov.org/content/denvergov/en/trash-and-recycling/composting/compost-collection-program.html">
+          <a href="https://www.denvergov.org/content/denvergov/en/trash-and-recycling/composting/compost-collection-program.html">
             <li>Walk or bike when you can. </li>
           </a>
           <li>Take public transit when possible. </li>
@@ -150,33 +159,34 @@ const IndexPage = () => (
 
     <article className="container box style1 right">
       <a href="/#" className="image fit">
-        <img src={pic2} alt="" />
+        <div id="heating-image"></div>
       </a>
-      <header>
-        <h2>RE:
-          <br />
-          Eating Meat
-        </h2>
+      <div className="inner">
+        <header>
+          <h2>
+            RE:
+            <br />
+            Do you use heating and cooling in your home?
+          </h2>
+        </header>
+        <h4>
+          Where Are We Now?
+        </h4>
+        <p><a href="https://www.eia.gov/energyexplained/index.php?page=us_energy_homes">In 2017, the electricity sector was the second largest source of U.S. greenhouse gas emissions, accounting for 27.5 percent of the U.S. total.</a>On average, more than half of a US household’s annual energy consumption is for just two energy end uses: space heating and air conditioning. The hotter it gets, the more people use AC-- the more people use AC, the hotter it gets! 🥵The organic compound Hydrofluorocarbon (HFC) is the primary refrigerant used in air conditioning and refrigeration units. HFCs are a much more potent greenhouse gas than carbon dioxide 😱♨️</p>
+        <h4>
+          Where Do We Need To Be?
+        </h4>
         <p>
-          This is an action item
+          Replacing an air conditioner that is more than 10 years old would decrease energy use by 20-40%! If we all replaced our ACs or used them significantly less, we'd be preventing 100 million metric tons of CO2 from expelling into our air! 
         </p>
-      </header>
-
-      <div className="inner gallery">
-        <Gallery
-          images={ROW1_IMAGES.map(({ src, thumbnail, caption }) => ({
-            src,
-            thumbnail,
-            caption,
-          }))}
-        />
-        <Gallery
-          images={ROW2_IMAGES.map(({ src, thumbnail, caption }) => ({
-            src,
-            thumbnail,
-            caption,
-          }))}
-        />
+        <h4>
+          Daily Action Item:
+        </h4>
+        <ol>
+          <li>TURN IT DOWN - Keep thermostat at 68ºF during winter and 78ºF during the summer, and only use heating/cooling when you are awake or when necessary.</li>
+          <li>TURN IT OFF - Over the next 10 years, the power used by products in “standby” could be as high as 10 percent of total electricity use. Powering these will require 400 medium-sized power plants.</li>
+          <li>DO IT YOURSELF - use less electric gadgets, use less batteries, buying products wastes more than just the electricity the product uses (water and fuel used to create and distribute product)</li>
+        </ol>
       </div>
     </article>
 
