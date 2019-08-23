@@ -3,9 +3,8 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Link } from 'gatsby';
 import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
+import pic2 from '../assets/images/pic02.png';
 import Scroll from '../components/Scroll';
 import Gallery from '../components/Gallery';
 
@@ -60,21 +59,15 @@ const IndexPage = () => (
 
     <section id="banner">
       <header>
-        <h2>This is Overflow</h2>
+        <h2>About Us</h2>
       </header>
       <p>
-        A brand new site template designed by{' '}
-        <a href="http://twitter.com/ajlkn">AJ</a> for{' '}
-        <a href="http://html5up.net">HTML5 UP</a>.<br />
-        It’s responsive, built on HTML5/CSS3, and entirely free
-        <br />
-        under the{' '}
-        <a href="http://html5up.net/license">Creative Commons license</a>.
+       Radical tech ed//installations//do nothing without intention
       </p>
       <footer>
         <Scroll type="id" element="first">
           <a href="#first" className="button style2 scrolly">
-            Act on this message
+            CRBN FTPRNT Action Items
           </a>
         </Scroll>
       </footer>
@@ -87,14 +80,13 @@ const IndexPage = () => (
       <div className="inner">
         <header>
           <h2>
-            Lorem ipsum
+            RE: 
             <br />
-            dolor sit amet
+            Recycling
           </h2>
         </header>
         <p>
-          Tortor faucibus ullamcorper nec tempus purus sed penatibus. Lacinia
-          pellentesque eleifend vitae est elit tristique velit tempus etiam.
+          This is an action item
         </p>
       </div>
     </article>
@@ -106,25 +98,28 @@ const IndexPage = () => (
       <div className="inner">
         <header>
           <h2>
-            Mollis posuere
+            RE: 
             <br />
-            lectus lacus
+            Driving
           </h2>
         </header>
         <p>
-          Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper.
-          Etiam egestas scelerisque ac duis magna lorem ipsum dolor.
+          This is an action item 
         </p>
       </div>
     </article>
 
-    <article className="container box style2">
+    <article className="container box style1 right">
+      <a href="/#" className="image fit">
+        <img src={pic2} alt="" />
+      </a>
       <header>
-        <h2>Magnis parturient</h2>
-        <p>
-          Justo phasellus et aenean dignissim
+        <h2>RE:
           <br />
-          placerat cubilia purus lectus.
+          Eating Meat
+        </h2>
+        <p>
+          This is an action item
         </p>
       </header>
 
@@ -182,17 +177,6 @@ const IndexPage = () => (
         </div>
       </form>
     </article>
-
-    <article className="container box style3">
-      <header>
-        <h2>Elements</h2>
-        <p>This starter has other elements.</p>
-        <br />
-        Check it out
-        <Link to="/Element"> here </Link>
-      </header>
-    </article>
-
     <Footer />
   </Layout>
 );

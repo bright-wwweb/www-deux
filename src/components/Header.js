@@ -12,7 +12,7 @@ export default function Header({ title, heading, avatar }) {
       <footer>
         <Scroll type="id" element="banner">
           <a href="#banner" className="button style2 ">
-            Proceed as anticipated
+            CRBN FTPRNT
           </a>
         </Scroll>
       </footer>

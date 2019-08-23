@@ -106,12 +106,11 @@
 		}
 
 	body, .main-body {
-		background-color: #183026;
-		background-image: url('../images/overlay.png'), url('../images/bg.jpg');
-		background-repeat: repeat, no-repeat;
-		background-size: auto, cover;
-		background-position: top left, center 0;
-		background-attachment: fixed, fixed;
+  		background-image: url('../images/brighwwweb.jpeg');
+		background-repeat: no-repeat, no-repeat;
+		background-size: cover, cover;
+		background-position: center 0;
+		background-attachment: fixed;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -557,7 +556,7 @@
 		display: inline-block;
 		border: 0;
 		background: #35b88f;
-		color: #fff;
+		color: #bb47fb;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		cursor: pointer;
 		text-decoration: none;
@@ -572,13 +571,13 @@
 		}
 
 		&.style2 {
-			color: #3a3939;
-			background: #fff;
-			box-shadow: inset 0 0 0 1px #fff;
+			color: white;
+			background: #bb47fb;
+			box-shadow: inset 0 0 0 1px #bb47fb;
 
 			&:hover {
 				background: rgba(255, 255, 255, 0.1);
-				color: #fff !important;
+				color: #bb47fb !important;
 				text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25) !important;
 			}
 		}
@@ -608,7 +607,7 @@
 			top: -9em;
 			left: 50%;
 			height: 9em;
-			border-left: solid 1px #fff;
+			border-left: solid 1px #bb47fb;
 		}
 
 		&:before {
@@ -629,7 +628,7 @@
 		}
 
 		&.style1 {
-			background: #fff;
+			background: #bb47fb;
 			padding: 3em;
 
 			.image {
@@ -691,7 +690,7 @@
 
 			header {
 				display: inline-block;
-				background: #fff;
+				background: #bb47fb;
 				padding: 2em 3em 2em 3em;
 				margin: 0;
 
@@ -711,7 +710,7 @@
 					top: 0;
 					left: 50%;
 					height: 100%;
-					border-left: solid 1px #fff;
+					border-left: solid 1px #bb47fb;
 				}
 
 				.row {
@@ -724,7 +723,7 @@
 						top: 50%;
 						left: 20px;
 						width: calc(100% - 40px);
-						border-bottom: solid 1px #fff;
+						border-bottom: solid 1px #bb47fb;
 					}
 				}
 
@@ -737,7 +736,7 @@
 		}
 
 		&.style3 {
-			background: #fff;
+			background: #bb47fb;
 			padding: 3em;
 
 			header {
@@ -770,10 +769,20 @@
 
 /* Header */
 
+	#header:hover {
+	font-family: 'Homemade Apple', cursive;
+	text-transform: lowercase;
+	}
+	#header:hover:after {
+	content: attr(data-hover);
+	}
+	#header:hover span {
+	display: none;
+	}		
 	#header {
 		@include vendor('transition', 'opacity 2s ease-in-out');
 		position: relative;
-		color: #fff;
+		color: #bb47fb;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		margin: 0;
@@ -792,8 +801,8 @@
 			}
 
 			p {
-				border-top: solid 1px rgba(255, 255, 255, 0.5);
-				color: #fff;
+				border-top: solid 1px #bb47fb;
+				color: #bb47fb;
 
 				text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.1875);
 				font-size: 1em;
@@ -805,7 +814,7 @@
 				&:before {
 					content: '';
 					display: block;
-					border-top: solid 1px rgba(255, 255, 255, 0.5);
+					border-top: solid 1px #bb47fb;
 					margin: 4px 0 0.8em 0;
 				}
 			}
@@ -829,7 +838,7 @@
 				bottom: -9em;
 				left: 50%;
 				height: 9em;
-				border-left: solid 1px #fff;
+				border-left: solid 1px #bb47fb;
 			}
 
 			&:before {
@@ -860,16 +869,16 @@
 
 	#banner {
 		position: relative;
-		color: #fff;
+		color: white;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: #35b88f url('../images/banner.svg') bottom center no-repeat;
+		background: grey url('../images/banner.svg') bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
 
 		.button {
-			color: #35b882;
+			color: white;
 			text-shadow: 0 0 0.5px rgba(53, 184, 130, 0.25);
 		}
 
@@ -905,7 +914,7 @@
 
 	#footer {
 		position: relative;
-		color: #fff;
+		color: #bb47fb;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		margin: 4.5em 0 0 0;
@@ -917,11 +926,11 @@
 			top: -4.5em;
 			left: 50%;
 			height: 4.5em;
-			border-left: solid 1px #fff;
+			border-left: solid 1px #bb47fb;
 		}
 
 		a {
-			color: #fff;
+			color: #bb47fb;
 			text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 
@@ -935,7 +944,7 @@
 		.icons {
 			padding: 0.75em 2em 0.75em 2em;
 			border-radius: 3em;
-			border: solid 1px #fff;
+			border: solid 1px #bb47fb;
 			display: inline-block;
 			margin: 0 0 3em 0;
 		}
@@ -950,7 +959,7 @@
 
 	.poptrox-popup {
 		@include vendor('box-sizing', 'content-box');
-		background: #fff;
+		background: #bb47fb;
 		padding-bottom: 3em;
 
 		.loader {
@@ -967,7 +976,7 @@
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			background: #fff;
+			background: #bb47fb;
 			width: 100%;
 			height: 3em;
 			line-height: 3em;
@@ -1051,9 +1060,9 @@
 				width: 40px;
 				height: 40px;
 				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #fff;
+				box-shadow: inset 0 0 0 1px #bb47fb;
 				background: rgba(255, 255, 255, 0.1) url('../images/poptrox-closer.svg') center center;
-				color: #fff !important;
+				color: #bb47fb !important;
 			}
 		}
 
@@ -1112,11 +1121,11 @@
 		/* Basic */
 
 			body {
-				background-color: #203936;
-				background-image: url('../images/overlay.png'), url('../images/bg-alt.jpg');
-				background-repeat: repeat, no-repeat;
+				background-color: yellow;
+				background-image: url('../images/overlay.png');
+				background-repeat: no-repeat;
 				background-size: auto, 100% auto;
-				background-position: top left, top center;
+				background-position: center;
 				background-attachment: scroll, scroll;
 				font-size: 14pt;
 			}
@@ -1426,3 +1435,15 @@
 			}
 
 	}
+
+.inner {
+	header, p {
+		color: white;
+	}
+}
+
+.container.box {
+	header, p, h1, input {
+		color: white;
+	}
+}
