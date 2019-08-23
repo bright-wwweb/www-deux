@@ -40,7 +40,6 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
 		vertical-align: baseline;
 	}
 
@@ -106,7 +105,8 @@
 		}
 
 	body, .main-body {
-  		background-image: url('../images/brighwwweb.jpeg');
+		background-image: url('../images/brighwwweb.jpeg');
+		background-color: yellow;
 		background-repeat: no-repeat, no-repeat;
 		background-size: cover, cover;
 		background-position: center 0;
@@ -116,7 +116,7 @@
 		line-height: 1.75em;
 		font-weight: 300;
 		letter-spacing: 1px;
-		color: #3a3939;
+		color: white;
 		text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
 		-webkit-text-stroke: 0.25px;
 
@@ -146,7 +146,7 @@
 		-webkit-text-stroke: 0.25px;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h5, h6 {
 		font-weight: 400;
 		text-transform: uppercase;
 		line-height: 1.75em;
@@ -238,7 +238,7 @@
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
-		width: 1140px;
+		width: 1620px;
 
 		@include breakpoint('<=wide') {
 			width: 960px;
@@ -292,12 +292,17 @@
 
 /* Image */
 
+	.compost-img {
+		background: url("../images/pic01.jpg") no-repeat;
+		position: absolute;
+	}
+
 	.image {
-		display: inline-block;
+		display: sticky;
 		border: 0;
 
 		img {
-			display: block;
+			display: sticky;
 			width: 100%;
 		}
 
@@ -308,7 +313,7 @@
 		}
 
 		&.fit {
-			display: block;
+			display: sticky;
 			width: 100%;
 		}
 
@@ -641,7 +646,7 @@
 				overflow: hidden;
 
 				img {
-					position: absolute;
+					position: sticky;;
 					top: 0;
 					height: 100%;
 					width: auto;
@@ -778,7 +783,7 @@
 	}
 	#header:hover span {
 	display: none;
-	}		
+	}
 	#header {
 		@include vendor('transition', 'opacity 2s ease-in-out');
 		position: relative;
@@ -805,8 +810,6 @@
 				color: #bb47fb;
 
 				text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.1875);
-				font-size: 1em;
-				text-transform: uppercase;
 				letter-spacing: 3px;
 				padding: 0;
 				margin-top: 0.35em;
@@ -872,7 +875,7 @@
 		color: white;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
-		background: grey url('../images/banner.svg') bottom center no-repeat;
+		background: url('../images/banner.svg') bottom center no-repeat;
 		padding: 5em 0 5em 0;
 		margin: 0;
 		background-size: 125% auto;
@@ -891,9 +894,16 @@
 				letter-spacing: 8px;
 			}
 		}
+		
+		h4 {
+			font-family: 'Homemade Apple', cursive;
+			font-weight: bold;
+		}
 
 		p {
 			margin: 0;
+			font-size: 14px;
+			line-height: 1.5em;
 		}
 
 		footer {
@@ -1121,7 +1131,7 @@
 		/* Basic */
 
 			body {
-				background-color: yellow;
+				background-color: yellow !important;
 				background-image: url('../images/overlay.png');
 				background-repeat: no-repeat;
 				background-size: auto, 100% auto;
