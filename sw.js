@@ -26,21 +26,25 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-5dabd9bb573af67e5d1f.js"
+    "url": "webpack-runtime-9666ff22ecc6b9c0b967.js"
   },
   {
-    "url": "app-36f3e5257ba59d98b6ff.js"
+    "url": "app-aaf4b8a3ec3d7a2f2418.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-2426eea4c01b1d117b45.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "e593f0cbd4b635c9aee4789ee02c93e9"
+    "revision": "e9efd10b6b05c082de11e03ae8c6c825"
+  },
+  {
+    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
+    "revision": "829efdb6ee3acfddc6a1c23584dacc29"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "6fe7a18f68771f1c25f99501c94d4d53"
+    "revision": "1a48a42f9e9fe1ced7587bc3b4f9693e"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -59,12 +63,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/www-deux`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-36f3e5257ba59d98b6ff.js`))) {
+  if (!resources || !(await caches.match(`/www-deux/app-aaf4b8a3ec3d7a2f2418.js`))) {
     return await fetch(event.request)
   }
 
@@ -77,7 +81,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/www-deux/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
