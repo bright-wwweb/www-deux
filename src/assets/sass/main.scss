@@ -149,8 +149,8 @@
 		background-position: center 0;
 		background-attachment: fixed;
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 18pt;
-		line-height: 1.75em;
+		font-size: 13pt;
+		line-height: 1.5em;
 		font-weight: 300;
 		letter-spacing: 1px;
 		color: white;
@@ -174,7 +174,7 @@
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 18pt;
+		font-size: 16pt;
 		line-height: 1.75em;
 		font-weight: 300;
 		letter-spacing: 1px;
@@ -217,7 +217,7 @@
 		color: #35b88f;
 		text-shadow: 0 0 0.5px rgba(53, 184, 143, 0.25);
 		text-decoration: none;
-		border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
+		border-bottom: white 1px solid;
 
 		&:hover {
 			border-bottom-color: rgba(53, 184, 143, 0);
@@ -278,7 +278,7 @@
     width: 1512px;
 
 		@include breakpoint('<=wide') {
-			width: 960px;
+			width: 1000px;
 		}
 
 		@include breakpoint('<=normal') {
@@ -396,6 +396,7 @@
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		background-color: #bb47fb;
 
 		li {
 			display: inline-block;
@@ -665,7 +666,7 @@
 
 		&.style1 {
 			background: #bb47fb;
-			padding: 3em;
+			padding: 2.5em;
 
 			.image {
 				display: block;
@@ -701,7 +702,7 @@
 
 				.inner {
 					margin-left: 50%;
-					padding-left: 3em;
+					padding-left: 2.5em;
 				}
 			}
 
@@ -716,7 +717,7 @@
 
 				.inner {
 					margin-right: 50%;
-					padding-right: 3em;
+					padding-right: 2.5em;
 				}
 			}
 		}
@@ -819,7 +820,6 @@
 		@include vendor('transition', 'opacity 2s ease-in-out');
 		position: relative;
 		color: #bb47fb;
-		font-size: -webkit-xxx-large;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
 		text-align: center;
 		margin: 0;
@@ -833,7 +833,7 @@
 
 			h1 {
 				font-weight: 600;
-				font-size: 2em;
+				font-size: 3.5em;
 				letter-spacing: 10px;
 			}
 
@@ -944,7 +944,7 @@
 
 		p {
 			margin: 0;
-			font-size: -webkit-xxx-large;
+			font-size: 1.25em;
 			line-height: 1.5em;
 		}
 
@@ -1179,7 +1179,7 @@
 				background-size: auto, 100% auto;
 				background-position: center;
 				background-attachment: scroll, scroll;
-				font-size: 14pt;
+				font-size: 12pt;
 			}
 
 			input, textarea, select {
@@ -1206,7 +1206,7 @@
 				}
 
 				&.style1 {
-					padding: 2.5em 2em 2.5em 2em;
+					padding: 2em;
 
 					&.right {
 						.inner {
@@ -1269,7 +1269,7 @@
 
 			body, input, textarea, select {
 				line-height: 1.5em;
-				font-size: 12pt;
+				font-size: 10pt;
 				letter-spacing: 0;
 			}
 
@@ -1280,6 +1280,10 @@
 			h2 {
 				font-size: 1.25em;
 				letter-spacing: 4px;
+			}
+
+			.container {
+				width: 100%;
 			}
 
 		/* List */
@@ -1367,7 +1371,6 @@
 
 				&.style1 {
 					padding: 0;
-					text-align: center;
 
 					.image {
 						position: relative !important;
@@ -1384,7 +1387,7 @@
 
 					.inner {
 						margin: 0 !important;
-						padding: 2em 1.25em 2em 1.25em !important;
+						padding: 1.5em !important;
 					}
 				}
 
@@ -1444,7 +1447,7 @@
 
 		/* Banner */
 			#banner {
-				padding: 3em 2em 3em 2em;
+				padding: 3em 1em 2em 1em;
 				background-size: auto 150%;
 
 				header {

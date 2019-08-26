@@ -60,20 +60,22 @@ const IndexPage = () => (
       </header>
       <p>
         °• Mxd Media Collective •°
-        <br/>
+      </p>
+      <p>
         °• RADICAL TECH EDUCATION
         °• SOFTWARE 
         °• HARDWARE
         °• MUSIC 
-        <br />
+      </p>
+      <p>
         Karina Muñoz Gonzalez •°
         Michelle Lim •°
         David Viramontes •° 
         Kyle Videtzky •° 
-        <br />
-
+      </p>
+      <p>
         °• Do nothing without intention •°
-       </p>
+      </p>
       <footer>
         <Scroll type="id" element="first">
           <a href="#first" className="button style2 scrolly">
@@ -98,7 +100,7 @@ const IndexPage = () => (
         <h4>
           Where Are We Now?
         </h4>
-        <p><a href="https://archive.epa.gov/epawaste/nonhaz/municipal/web/html/">Compostable waste (food scraps & yard waste) make up about 30% of what we throw away.</a>When recyclable/compostable materials aren't disposed of properly, they produce millions of metric tons of carbon dioxide and expedite the global warming. 🥵</p>
+        <p><a href="https://archive.epa.gov/epawaste/nonhaz/municipal/web/html/">Compostable waste (food scraps & yard waste) make up about 30% of what we throw away.</a> When recyclable/compostable materials aren't disposed of properly, they produce millions of metric tons of carbon dioxide and expedite the global warming. 🥵</p>
         <h4>
           Where Do We Need To Be?
         </h4>
@@ -192,39 +194,8 @@ const IndexPage = () => (
 
     <article className="container box style3">
       <header>
-        <h2>Nisl sed ultricies</h2>
-        <p>Diam dignissim lectus eu ornare volutpat orci.</p>
+        <h2>Stay in touch</h2>
       </header>
-      <form method="post" action="#">
-        <div className="row gtr-50">
-          <div className="col-6 col-12-mobile">
-            <input
-              type="text"
-              className="text"
-              name="name"
-              placeholder="Name"
-            />
-          </div>
-          <div className="col-6 col-12-mobile">
-            <input
-              type="text"
-              className="text"
-              name="email"
-              placeholder="Email"
-            />
-          </div>
-          <div className="col-12">
-            <textarea name="message" placeholder="Message" />
-          </div>
-          <div className="col-12">
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </form>
     </article>
     <Footer />
   </Layout>
